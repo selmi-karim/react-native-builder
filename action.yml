@@ -1,10 +1,17 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'React Native Builder'
+description: 'Build android && iOS debug apk'
+author: 'selmi-kerim'
+branding:
+  icon: upload-cloud
+  color: green
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  github_token:
+    description: 'Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}'
+    required: false
+  filename:
+    description: 'artifact filename'
+    required: true
+    default: 'app'
 runs:
   using: 'node12'
   main: 'dist/index.js'
