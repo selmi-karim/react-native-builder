@@ -1,3 +1,3 @@
 # react-native-builder
 
-Automate React Native Builds With Github Actions
+Automate react native builds android && iOS with Github Actions
